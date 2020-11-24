@@ -27,7 +27,7 @@ class createUpdateRequest extends FormRequest
                'naziv' => 'required|string|max:150',
                'oseba' => 'required|string|max:150',
                'opis' => 'required|string|max:1750',
-               'datumZakljucevanja' => 'date',
+               'datumZakljucevanja' => 'date|nullable',
                'zakljuceno' => 'boolean'
            ];
     }

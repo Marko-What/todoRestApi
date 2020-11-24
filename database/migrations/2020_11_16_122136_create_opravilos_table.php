@@ -16,7 +16,7 @@ class CreateOpravilosTable extends Migration
         Schema::create('opravilos', function (Blueprint $table) {
 	    $table->increments('id');
 	    $table->string('naziv');
-            $table->date('datumZakljucevanja')->format('d/m/Y')->nullable();
+            $table->date('datumZakljucevanja')->format('d/m/Y')->nullable()->default(null);
 	    $table->boolean('completed')->default(false);
 	    $table->string('oseba');
             $table->string('opis');

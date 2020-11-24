@@ -10,4 +10,5 @@ class opravilo extends Model
 
     // An array of the fields we can fill in the comments table
    protected $fillable = ['naziv', 'datumZakljucevanja', 'completed', 'oseba', 'opis'];
+   protected $hidden = ['created_at', 'updated_at'];
 }
