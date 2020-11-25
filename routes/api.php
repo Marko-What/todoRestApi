@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('test', 'ApiCrud@test');
-
+	
 Route::group(['prefix' => 'v1'], function () {
   	Route::get('opravilo', 'ApiCrud@index');
 	Route::get('opravilo/{opravilo}', 'ApiCrud@show');
