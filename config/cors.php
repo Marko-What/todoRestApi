@@ -15,9 +15,9 @@ return [
     |
     */
 
-    'paths' => ['api/*'],
+    'paths' => ['api/*', 'api/v1/opravilo', 'api/v1/opravilo', '*'],
 
-    'allowed_methods' => ['*'],
+    'allowed_methods' => ['POST', 'GET', 'DELETE', 'PUT', '*'],
 
     'allowed_origins' => ['*'],
 
